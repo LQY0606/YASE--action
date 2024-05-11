@@ -99,7 +99,8 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
         
     - name: 应用patch & 更新安装 feeds
-      run: |        
+      run: |
+        cd openwrt
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         
